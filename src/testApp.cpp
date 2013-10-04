@@ -5,24 +5,39 @@
 //--------------------------------------------------------------
 void testApp::setup(){
     
+    LList<double> tList = LList<double>();
+    
+    /*
+    
+    for(int i = 0; i<319; i++){
+        for(int j=0; j<239; j++){
+            pointMem[i][j]= 1;
+            
+        }
+    }
+    
+    
+    */
 
     movement.set(mDist, mDist);
     node.set(width/2,height/2);
     
     //set up some points on our vector
-    
     /*
+    
     for(int i=300; i<350; i=i+5){
         for(int j=300; j<350; j=j+5){
             myPoints.push_back(ofVec2f(i,j));
         }
     }
-*/
+     */
+
 
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
+    
     
     //while( mCount < 1000)
 
@@ -61,23 +76,21 @@ bool testApp::lineMaker(ofVec2f node){
     }
     
     
-//    if(boringCounter > boringThreshold){
-//        movement.set(movement.getRotated(ofRandom(0,180)));
-//        boringThreshold = 0;
-//    }
+
     
     mCount++;
     
     
-    node = node + movement;
+    //node = node + movement;
     
     
-    movement.set(movement.getRotated(ofRandom(0,180)));
+   // movement.set(movement.getRotated(ofRandom(0,10)));
     
 
     
     
     if(mCount > 10000) return false;
+    
     
     if(node.x > width){
         movement.x  = -movement.x;
@@ -101,8 +114,9 @@ bool testApp::lineMaker(ofVec2f node){
         return false;
     }
 
-    
     /*
+    
+    
     if(mCount > 50){
         for(int i=0; i<myPoints.size()-1; i++){
             for(int j=0; j<i; j++){
@@ -116,8 +130,29 @@ bool testApp::lineMaker(ofVec2f node){
      */
     
     
+    
+    //check if there is already a point there
+
+    
+    //store information about the node into the array
+    //if(pointMem[int(node.x)][int(node.y)] == 2) return false;
+    
+    
+    
+    
+    
+    //pointMem[int(node.x)][int(node.y)] = 2;
+    
+    
     myPoints.push_back(node);
     lineMaker(node);
+    return true;
+
+    
+    
+    
+    
+    
     
 //    lineMaker(ofVec2f(node.x+movement.x, node.y));
 //    lineMaker(ofVec2f(node.x-movement.x, node.y));
@@ -162,7 +197,11 @@ bool testApp::lineMaker(ofVec2f node){
     //lineMaker(ofVec2f(node.x+mDist, node.y+mDist));
     
     //cout << "another vector: " << node.x << " , " << node.y << cout;
-    return true;
+    
+    //    if(boringCounter > boringThreshold){
+    //        movement.set(movement.getRotated(ofRandom(0,180)));
+    //        boringThreshold = 0;
+    //    }
     
     
 

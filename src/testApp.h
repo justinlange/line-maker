@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "LinkedList.h"
 
 class testApp : public ofBaseApp{
     
@@ -22,8 +23,9 @@ public:
     bool lineMaker(ofVec2f node);
     
     ofVec2f node;
-    
     ofVec2f movement;
+    
+    //short int pointMem[320][240];
     
     ofPolyline myLine;
     
@@ -32,12 +34,14 @@ public:
     const int height = 240;
     const int width = 320;
     
-    int mDist = 30;
+    int mDist = 15;
     
     int mCount = 0;
     int backtrackCount = 0;
     
     vector<ofVec2f> myPoints;
+    //vector<ofVec2f> storage;
+
     
 private:
     int boringCounter = 0;

@@ -6,17 +6,145 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "src/testApp.cpp"
-            timestampString = "402542025.844595"
+            filePath = "../../../libs/openFrameworks/math/ofVec2f.h"
+            timestampString = "402620301.947653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "testApp::lineMaker(ofVec2f node)"
-            landmarkType = "5">
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "class ofVec2f"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofVec2f::ofVec2f()"
+                  moduleName = "ofSeedFillDebug"
+                  urlString = "file://localhost/Users/justin/Code/C++/of_v0.8.0_osx_release/apps/myApps/ofSeedFill/../../../libs/openFrameworks/math/ofVec2f.h"
+                  timestampString = "402622086.366851"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofVec2f::ofVec2f()"
+                  moduleName = "ofSeedFillDebug"
+                  urlString = "file://localhost/Users/justin/Code/C++/of_v0.8.0_osx_release/apps/myApps/ofSeedFill/../../../libs/openFrameworks/math/ofVec2f.h"
+                  timestampString = "402622086.367184"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofNotifyMouseMoved(int, int)"
+                  moduleName = "ofSeedFillDebug"
+                  urlString = "file://localhost/Users/justin/Code/C++/of_v0.8.0_osx_release/libs/openFrameworksCompiled/project/osx/../../../../libs/openFrameworks/math/ofVec2f.h"
+                  timestampString = "402622086.367495"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofNotifyMouseDragged(int, int, int)"
+                  moduleName = "ofSeedFillDebug"
+                  urlString = "file://localhost/Users/justin/Code/C++/of_v0.8.0_osx_release/libs/openFrameworksCompiled/project/osx/../../../../libs/openFrameworks/math/ofVec2f.h"
+                  timestampString = "402622086.367796"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofNotifyMousePressed(int, int, int)"
+                  moduleName = "ofSeedFillDebug"
+                  urlString = "file://localhost/Users/justin/Code/C++/of_v0.8.0_osx_release/libs/openFrameworksCompiled/project/osx/../../../../libs/openFrameworks/math/ofVec2f.h"
+                  timestampString = "402622086.368097"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "49">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofNotifyMouseReleased(int, int, int)"
+                  moduleName = "ofSeedFillDebug"
+                  urlString = "file://localhost/Users/justin/Code/C++/of_v0.8.0_osx_release/libs/openFrameworksCompiled/project/osx/../../../../libs/openFrameworks/math/ofVec2f.h"
+                  timestampString = "402622086.368389"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "49">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofDrawBitmapCharacterStart(int)"
+                  moduleName = "ofSeedFillDebug"
+                  urlString = "file://localhost/Users/justin/Code/C++/of_v0.8.0_osx_release/libs/openFrameworksCompiled/project/osx/../../../../libs/openFrameworks/math/ofVec2f.h"
+                  timestampString = "402622086.368701"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofDrawBitmapCharacterEnd()"
+                  moduleName = "ofSeedFillDebug"
+                  urlString = "file://localhost/Users/justin/Code/C++/of_v0.8.0_osx_release/libs/openFrameworksCompiled/project/osx/../../../../libs/openFrameworks/math/ofVec2f.h"
+                  timestampString = "402622086.368994"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "115">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofTexture::ofTexture()"
+                  moduleName = "ofSeedFillDebug"
+                  urlString = "file://localhost/Users/justin/Code/C++/of_v0.8.0_osx_release/libs/openFrameworksCompiled/project/osx/../../../../libs/openFrameworks/math/ofVec2f.h"
+                  timestampString = "402622086.369291"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "155">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
