@@ -21,16 +21,26 @@ public:
     
     bool lineMaker(ofVec2f node);
     
+    ofVec2f node;
+    
+    ofVec2f movement;
+    
     ofPolyline myLine;
     
     ofImage mImage;
     
-    const int height = 768;
-    const int width = 1024;
+    const int height = 240;
+    const int width = 320;
     
-    int mDist = 10;
+    int mDist = 30;
+    
     int mCount = 0;
+    int backtrackCount = 0;
     
-    vector<ofPoint> myPoints;
+    vector<ofVec2f> myPoints;
+    
+private:
+    int boringCounter = 0;
+    int boringThreshold = 5;
     
 };

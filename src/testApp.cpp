@@ -5,9 +5,19 @@
 //--------------------------------------------------------------
 void testApp::setup(){
     
-    //ofImage = new of
 
-
+    movement.set(mDist, mDist);
+    node.set(width/2,height/2);
+    
+    //set up some points on our vector
+    
+    /*
+    for(int i=300; i<350; i=i+5){
+        for(int j=300; j<350; j=j+5){
+            myPoints.push_back(ofVec2f(i,j));
+        }
+    }
+*/
 
 }
 
@@ -18,9 +28,14 @@ void testApp::update(){
 
     //lineMaker(ofVec2f(int(ofRandom(mDist)), int(ofRandom(mDist))));
     
-    lineMaker(ofVec2f(50, 50));
+    lineMaker(node);
+    //lineMaker(ofVec2f(ofRandom(width),ofRandom(height)));
 
-    cout << mCount << endl;
+    //cout << backtrackCount << endl;
+    
+    for (int i = 0; i<myPoints.size(); i++) {
+        myLine.addVertex(myPoints[i]);
+    }
 
    // lineMaker(ofVec2f(rand(), rand()));
 }
@@ -39,23 +54,115 @@ void testApp::draw(){
 
 bool testApp::lineMaker(ofVec2f node){
     
-    //need to first create a vector of points, then iterate over to create the line
+
     
-    myLine.addVertex(node);
+    if(movement == movement){
+        boringCounter++;
+    }
+    
+    
+//    if(boringCounter > boringThreshold){
+//        movement.set(movement.getRotated(ofRandom(0,180)));
+//        boringThreshold = 0;
+//    }
     
     mCount++;
     
+    
+    node = node + movement;
+    
+    
+    movement.set(movement.getRotated(ofRandom(0,180)));
+    
+
+    
+    
     if(mCount > 10000) return false;
-    if(node.x > width || node.y > height || node.x <= 0+mDist || node.y <= 0+mDist) return false;
+    
+    if(node.x > width){
+        movement.x  = -movement.x;
+        return false;
+    }
+    
+    
+    if(node.y > height){
+        movement.y = -movement.y;
+        return false;
+    }
+
+    if(node.x <= 0){
+        movement.x = -movement.x;
+        return false;
+    }
+    
+    
+    if(node.y <= 0){
+        movement.y = -movement.y;
+        return false;
+    }
+
+    
+    /*
+    if(mCount > 50){
+        for(int i=0; i<myPoints.size()-1; i++){
+            for(int j=0; j<i; j++){
+                
+                if(myPoints[i].squareDistance(myPoints[j]) < 1)
+                    return false;
+                cout << "close distance!" << endl;
+            }
+        }
+    }
+     */
+    
+    
+    myPoints.push_back(node);
+    lineMaker(node);
+    
+//    lineMaker(ofVec2f(node.x+movement.x, node.y));
+//    lineMaker(ofVec2f(node.x-movement.x, node.y));
+//    lineMaker(ofVec2f(node.x, movement.y + node.y));
+//    lineMaker(ofVec2f(node.x, movement.y - node.y));
+
+
+    
+
+    
+    //need to check if the line is intersecting...
+  
+    
+    /*
+    
+    
+    for(int i=4; i<myPoints.size(); i++){
+        for(int j=4; j<myPoints.size(); j++){
+            if(myPoints[5].squareDistance(myPoints[j]) < 1){
+                
+                //except for the point that we are on!!!
+        
+        //if(node.distance(myPoints[i]) < 0){
+            backtrackCount++;
+            return false;
+            }
+        }
+    }
+    
+*/
+    
     
     //if(node.x < width && node.y < height)
         
    // if (myLine.isClosed()
-   
+    
+
+
+
 
     
-    lineMaker(ofVec2f(node.x+ofRandom(-mDist,mDist), node.y+ofRandom(-mDist,mDist)));
-        return true;
+    //lineMaker(ofVec2f(node.x+mDist, node.y+mDist));
+    
+    //cout << "another vector: " << node.x << " , " << node.y << cout;
+    return true;
     
     
 
